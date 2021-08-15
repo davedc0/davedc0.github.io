@@ -19,5 +19,6 @@ function update() {
   
 }
 
+document.addEventListener('load', update);
 document.addEventListener('scroll', update);
 update();
