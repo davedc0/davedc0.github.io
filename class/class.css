@@ -52,6 +52,7 @@ html {
 	margin-right: 2px;
 }
 .purplebg{
+	position: relative;
 	background-color: #592f4a;
 	color: #ffffff;
 	width: 80%;
@@ -61,11 +62,15 @@ html {
 	box-shadow: 10px 15px 15px 0 rgba(1.0, 1.0, 1.0, 0.2);
 	transition: 0.3s;
 	opacity: 100%;
+	left: 0px;
 }
 .purplehide{
+	left: -20%;
 	opacity: 0%;
 }
+
 .whitebg{
+	position: relative;
 	color: #521851;
 	background-color: #ffffff;
 	width: 80%;
@@ -74,7 +79,11 @@ html {
 	margin-left: 18%;
 	box-shadow: 10px 15px 15px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.3s;
-
+ right: 0%;
+}
+.whitehide{
+	right: -20%;
+	opacity: 100%;
 }
 .whitebgtext{
 	color: #521851;
