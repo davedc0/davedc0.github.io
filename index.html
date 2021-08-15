@@ -2,7 +2,9 @@
 <html>
 <head>
 	<link rel="stylesheet" href="class/class.css">
-
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="Scroll.js"></script>
 
 
 	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
@@ -20,7 +22,7 @@
 		<div class="menu">
 			<a href="index.html"><div class="menuitem"> Home</div></a>
 			<a href="aboutme.html"><div class="menuitem"> About Me</div></a>
-			<a href="achievement.html"><div class="menuitem"> Achievement</div></a>
+			<a href="certificate.html"><div class="menuitem"> Certificate</div></a>
 		</div>
 		
  	
@@ -39,7 +41,7 @@
  		</div>
  	</div>
  	
- 	<div class="purplebg" >
+ 	<div class="purplebg purplehide" >
  		
  		<div class="subtitle" ><p>DIGITAL PAINTING</p></div>
  		<div class="flexdis imagescontainer">
@@ -58,7 +60,7 @@
  			<img class="item" src="Image/DigitalPaint/12.jpg" onclick="OpenImage(this)">
  		</div>
  	</div>
- 	<div class="whitebg" >
+ 	<div class="whitebg whitehide" >
  		
  		<div class="subtitle" ><p>PIXEL ART</p></div>
  		<div class="flexdis imagescontainer">
@@ -77,7 +79,7 @@
  			<img class="item" src="Image/PixelArt/12.png" onclick="OpenImage(this)"> 
  		</div>
  	</div>
- 	<div class="purplebg">
+ 	<div class="purplebg purplehide" >
  		
  		<div class="subtitle" ><p>3D MODEL</p></div>
  		<div class="flexdis imagescontainer">
@@ -88,7 +90,7 @@
  			<img class="item" src="Image/3DModel/5.png" onclick="OpenImage3D(this,'x',4,'jpg')">
  		</div>
  	</div>
- 	<div class="whitebg" >
+ 	<div class="whitebg whitehide" >
  		
  		<div class="subtitle" ><p>GAME DEVELOPMENT</p></div>
  		<div class="flexdis imagescontainer">
@@ -120,9 +122,6 @@
  		</div>
  		<div class="top-left" onclick="CloseImage3D()">Click here to Close</div>
  	</div>
- 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  
  	<script>
     AOS.init();
   </script>
