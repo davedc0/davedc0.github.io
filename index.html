@@ -120,11 +120,18 @@
  		</div>
  		<div class="top-left" onclick="CloseImage3D()">Click here to Close</div>
  	</div>
- 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   
- 	<script>
-    AOS.init();
+ 	 <script>
+    AOS.init({offset: 60, once: false,  disable: 'phone', duration: 300,
+      initClassName: 'aos-init',
+      animatedClassName: 'aos-animate',
+      useClassNames: false,
+      disableMutationObserver: false,
+      debounceDelay: 50,
+      throttleDelay: 99,
+      }); 
   </script>
 </body>
 <script type="text/javascript">
