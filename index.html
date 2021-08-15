@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="class/class.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+
+
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	
+	
+	<title></title>
+</head>
+
+<body>
+	
+	<div class="title"><span style="float:left;margin: 5px;">
+        Hover for navigation
+    </span>
+    <p>Dave Dwantara Chandra<br></p></div>
+		<div class="menu">
+			<a href="index.html"><div class="menuitem"> Home</div></a>
+			<a href="aboutme.html"><div class="menuitem"> About Me</div></a>
+			<a href="achievement.html"><div class="menuitem"> Achievement</div></a>
+		</div>
+		
+ 	
+ 	<div class="whitebg flexdis">
+ 		<img style="max-height: 100%; " id="montage" src="Image/montage.png">
+ 		
+ 		<div class="inlinecontent">
+ 			<div class="subtitle"><p>MY PORTOFOLIO</p></div>
+ 			<p style="padding-left:  10px; text-align: center;" class="walltext">Hello! My name is Dave Dwantara Chandra, I am capable of art from digital painting, pixel art, and 3D sculpting and modeling. I am also capable in the field of Information technology and have made few games of my own.
+ 			</p>
+ 			<br><br>
+ 			<p style="padding-left:  10px; text-align: center; font-size: 25px;" class="walltext">SCROLL DOWN TO SEE MY WORKS.
+ 			</p>
+ 			<p style="padding-left:  10px; text-align: center;" class="walltext">Click the work to zoom.
+ 			</p>
+ 		</div>
+ 	</div>
+ 	
+ 	<div class="purplebg" data-aos="fade-right">
+ 		
+ 		<div class="subtitle" ><p>DIGITAL PAINTING</p></div>
+ 		<div class="flexdis imagescontainer">
+ 			<img class="item" src="Image/DigitalPaint/1.jpg" 
+ 			onclick="OpenImage(this)"> 
+ 			<img class="item" src="Image/DigitalPaint/2.jpg" onclick="OpenImage(this)">
+ 			<img class="item" src="Image/DigitalPaint/3.jpg" onclick="OpenImage(this)">
+ 			<img class="item" src="Image/DigitalPaint/4.jpg" onclick="OpenImage(this)">
+ 			<img class="item" src="Image/DigitalPaint/5.png" onclick="OpenImage(this)">
+ 			<img class="item" src="Image/DigitalPaint/6.jpg" onclick="OpenImage(this)">
+ 			<img class="item" src="Image/DigitalPaint/7.jpg" onclick="OpenImage(this)">
+ 			<img class="item" src="Image/DigitalPaint/8.jpg" onclick="OpenImage(this)">
+ 			<img class="item" src="Image/DigitalPaint/9.jpg" onclick="OpenImage(this)">
+ 			<img class="item" src="Image/DigitalPaint/10.jpg" onclick="OpenImage(this)">
+ 			<img class="item" src="Image/DigitalPaint/11.jpg" onclick="OpenImage(this)">
+ 			<img class="item" src="Image/DigitalPaint/12.jpg" onclick="OpenImage(this)">
+ 		</div>
+ 	</div>
+ 	<div class="whitebg" data-aos="fade-left">
+ 		
+ 		<div class="subtitle" ><p>PIXEL ART</p></div>
+ 		<div class="flexdis imagescontainer">
+ 			
+ 			<img class="item" src="Image/PixelArt/9.png" onclick="OpenImage(this)"> 
+ 			<img class="item" src="Image/PixelArt/1.png" onclick="OpenImage(this)"> 
+ 			<img class="item" src="Image/PixelArt/2.gif" onclick="OpenImage(this)">
+ 			<img class="item" src="Image/PixelArt/3.png" onclick="OpenImage(this)"> 
+ 			<img class="item" src="Image/PixelArt/4.gif" onclick="OpenImage(this)">
+ 			<img class="item" src="Image/PixelArt/5.gif" onclick="OpenImage(this)">
+ 			<img class="item" src="Image/PixelArt/6.png" onclick="OpenImage(this)"> 
+ 			<img class="item" src="Image/PixelArt/7.png" onclick="OpenImage(this)"> 
+ 			<img class="item" src="Image/PixelArt/8.gif" onclick="OpenImage(this)">
+ 			<img class="item" src="Image/PixelArt/10.png" onclick="OpenImage(this)"> 
+ 			<img class="item" src="Image/PixelArt/11.png" onclick="OpenImage(this)"> 
+ 			<img class="item" src="Image/PixelArt/12.png" onclick="OpenImage(this)"> 
+ 		</div>
+ 	</div>
+ 	<div class="purplebg" data-aos="fade-right">
+ 		
+ 		<div class="subtitle" ><p>3D MODEL</p></div>
+ 		<div class="flexdis imagescontainer">
+ 			<img class="item" src="Image/3DModel/2.jpg" onclick="OpenImage3D(this,'kat',4,'jpg')">
+ 			<img class="item" src="Image/3DModel/1.gif" onclick="OpenImage3D(this,'bat',3,'jpg')"> 
+ 			<img class="item" src="Image/3DModel/3.png" onclick="OpenImage3D(this,'ship',5,'png')">
+ 			<img class="item" src="Image/3DModel/4.png" onclick="OpenImage3D(this,'girl',1,'png')">
+ 			<img class="item" src="Image/3DModel/5.png" onclick="OpenImage3D(this,'x',4,'jpg')">
+ 		</div>
+ 	</div>
+ 	<div class="whitebg" data-aos="fade-left">
+ 		
+ 		<div class="subtitle" ><p>GAME DEVELOPMENT</p></div>
+ 		<div class="flexdis imagescontainer">
+ 			<a  href="Meteor.html"><img  class="item" src="Image/GameDev/1.jpg"> </a>
+ 			
+ 			<img class="item" src="Image/GameDev/2.png"> 
+ 		</div>
+ 	</div>
+ 	<div class="footer" data-aos="fade-in">
+ 		<a href="https://www.deviantart.com/davedwantarac/gallery"><img class="linkicon" style="vertical-align:middle" src="Image/Icon/DA.png" id="test1"> DaveDwantaraC</a>
+ 		<p style="display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+ 		<a><img class="linkicon" style="vertical-align:middle" src="Image/Icon/email.png"> davedwantarac@gmail.com</a>
+ 	</div>	
+ 	<div class="popupbg hide" id="myPopup">
+ 		<img class="popupimg" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
+ 		<div class="top-left" onclick="CloseImage()">Click here to Close</div>
+ 	</div>
+ 	<div class="popupbg3d hide" id="myPopup3D">
+ 		<img class="popupimg3d" id="daiimg3d" src="Image/3DModel/2.jpg"> 
+ 		<div class="popupsideview" id="3dpane">
+ 			<img class="popupimg3dsideview" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
+ 			<img class="popupimg3dsideview" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
+ 			<img class="popupimg3dsideview" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
+ 			<img class="popupimg3dsideview" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
+ 			<img class="popupimg3dsideview" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
+ 			<img class="popupimg3dsideview" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
+ 			<img class="popupimg3dsideview" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
+ 			<img class="popupimg3dsideview" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
+ 		</div>
+ 		<div class="top-left" onclick="CloseImage3D()">Click here to Close</div>
+ 	</div>
+ 	<script>
+    AOS.init();
+  </script>
+</body>
+<script type="text/javascript">
+	function OpenImage(imgsource) {
+  		var popup = document.getElementById("myPopup");
+  		popup.classList.toggle("show");
+  		document.getElementById("daiimg").src=imgsource.src;
+ 	 	
+	}
+	function CloseImage() {
+  		var popup = document.getElementById("myPopup");
+ 	 	popup.classList.toggle("show");
+	}
+	function CloseImage3D() {
+  		var popup = document.getElementById("myPopup3D");
+ 	 	popup.classList.toggle("show");
+	}
+	function OpenImage3D(imgsource,name,num,type) {
+  		var popup = document.getElementById("myPopup3D");
+  		popup.classList.toggle("show");
+  		document.getElementById("daiimg3d").src=imgsource.src;
+		$("#3dpane").empty();
+ 	 	$("#3dpane").append('<img class="popupimg3dsideview" id="daiimg" src="'+imgsource.src+'" onclick="SwitchImage(this)"> ');
+ 	 	for (var i = 1; i <= num; i++) {
+ 	 		$("#3dpane").append('<img class="popupimg3dsideview" id="daiimg" src="Image/3DModel/'+name+i+'.'+type+'" onclick="SwitchImage(this)"> ');
+ 	 	}
+	}
+	function SwitchImage(imgsource) {
+  		document.getElementById("daiimg3d").src=imgsource.src;
+	}
+</script>
+</html>
