@@ -2,6 +2,8 @@
 <html>
 <head>
 	<link rel="stylesheet" href="class/class.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="Scroll.js"></script>
 
 
@@ -44,18 +46,18 @@
  		<div class="subtitle" ><p>DIGITAL PAINTING</p></div>
  		<div class="flexdis imagescontainer">
  			<img class="item" src="Image/DigitalPaint/1.jpg" 
- 			onclick="OpenImage(this)"> 
- 			<img class="item" src="Image/DigitalPaint/2.jpg" onclick="OpenImage(this)">
- 			<img class="item" src="Image/DigitalPaint/3.jpg" onclick="OpenImage(this)">
- 			<img class="item" src="Image/DigitalPaint/4.jpg" onclick="OpenImage(this)">
- 			<img class="item" src="Image/DigitalPaint/5.png" onclick="OpenImage(this)">
- 			<img class="item" src="Image/DigitalPaint/6.jpg" onclick="OpenImage(this)">
- 			<img class="item" src="Image/DigitalPaint/7.jpg" onclick="OpenImage(this)">
- 			<img class="item" src="Image/DigitalPaint/8.jpg" onclick="OpenImage(this)">
- 			<img class="item" src="Image/DigitalPaint/9.jpg" onclick="OpenImage(this)">
- 			<img class="item" src="Image/DigitalPaint/10.jpg" onclick="OpenImage(this)">
- 			<img class="item" src="Image/DigitalPaint/11.jpg" onclick="OpenImage(this)">
- 			<img class="item" src="Image/DigitalPaint/12.jpg" onclick="OpenImage(this)">
+ 			onclick="OpenImage('Image/DigitalPaint/big1.jpg')"> 
+ 			<img class="item" src="Image/DigitalPaint/2.jpg" onclick="OpenImage('Image/DigitalPaint/big2.jpg')">
+ 			<img class="item" src="Image/DigitalPaint/3.jpg" onclick="OpenImage('Image/DigitalPaint/big3.jpg')">
+ 			<img class="item" src="Image/DigitalPaint/4.jpg" onclick="OpenImage('Image/DigitalPaint/big4.jpg')">
+ 			<img class="item" src="Image/DigitalPaint/5.png" onclick="OpenImage('Image/DigitalPaint/big5.png')">
+ 			<img class="item" src="Image/DigitalPaint/6.jpg" onclick="OpenImage('Image/DigitalPaint/big6.jpg')">
+ 			<img class="item" src="Image/DigitalPaint/7.jpg" onclick="OpenImage('Image/DigitalPaint/big7.jpg')">
+ 			<img class="item" src="Image/DigitalPaint/8.jpg" onclick="OpenImage('Image/DigitalPaint/big8.jpg')">
+ 			<img class="item" src="Image/DigitalPaint/9.jpg" onclick="OpenImage('Image/DigitalPaint/big9.jpg')">
+ 			<img class="item" src="Image/DigitalPaint/10.jpg" onclick="OpenImage('Image/DigitalPaint/big10.jpg')">
+ 			<img class="item" src="Image/DigitalPaint/11.jpg" onclick="OpenImage('Image/DigitalPaint/big11.jpg')">
+ 			<img class="item" src="Image/DigitalPaint/12.jpg" onclick="OpenImage('Image/DigitalPaint/big12.jpg')">
  		</div>
  	</div>
  	<div class="whitebg whitehide" >
@@ -84,7 +86,7 @@
  			<img class="item" src="Image/3DModel/2.jpg" onclick="OpenImage3D(this,'kat',4,'jpg')">
  			<img class="item" src="Image/3DModel/1.gif" onclick="OpenImage3D(this,'bat',3,'jpg')"> 
  			<img class="item" src="Image/3DModel/3.png" onclick="OpenImage3D(this,'ship',5,'png')">
- 			<img class="item" src="Image/3DModel/4.jpg" onclick="OpenImage3D(this,'girl',1,'png')">
+ 			<img class="item" src="Image/3DModel/4.png" onclick="OpenImage3D(this,'girl',1,'png')">
  			<img class="item" src="Image/3DModel/5.png" onclick="OpenImage3D(this,'x',4,'jpg')">
  		</div>
  	</div>
@@ -120,13 +122,21 @@
  		</div>
  		<div class="top-left" onclick="CloseImage3D()">Click here to Close</div>
  	</div>
+ 	<script>
+    AOS.init();
+  </script>
 </body>
 <script type="text/javascript">
 	function OpenImage(imgsource) {
   		var popup = document.getElementById("myPopup");
   		popup.classList.toggle("show");
-  		document.getElementById("daiimg").src=imgsource.src;
- 	 	
+  		if(typeof imgsource === 'string'){
+  			document.getElementById("daiimg").src=imgsource;
+  		}
+  		else{
+  			document.getElementById("daiimg").src=imgsource.src;
+  		}
+  		
 	}
 	function CloseImage() {
   		var popup = document.getElementById("myPopup");
