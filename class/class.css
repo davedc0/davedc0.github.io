@@ -89,7 +89,7 @@ html {
 	color: #521851;
 	background-color: #ffffff;
 	width: 80%;
-	min-height: 400px;
+	min-height: 200px;
 	margin-top: 30px;
 	margin-left: 18%;
 	box-shadow: 10px 15px 15px 0 rgba(0, 0, 0, 0.2);
@@ -130,7 +130,7 @@ position: relative;
  display: inline-block;
 }
 .inlinecontent {
-	width: 60%;
+	width: 100%;
 	max-height: 60%;
 	margin-left: 0;
 	padding: 0;
