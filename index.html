@@ -10,12 +10,12 @@
 	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 	
 	
-	<title></title>
+	<title>My Works</title>
 </head>
 
 <body>
 	
-	<div class="title"><span style="float:left;margin: 5px;">
+	<div class="title"><span style="float:left;margin: 20px;">
         Hover for navigation
     </span>
     <p>Dave Dwantara Chandra<br></p></div>
@@ -95,14 +95,16 @@
  		<div class="subtitle" ><p>GAME DEVELOPMENT</p></div>
  		<div class="flexdis imagescontainer">
  			<a  href="Meteor.html"><img  class="item" src="Image/GameDev/1.jpg"> </a>
+ 			<a  href="TinaRook.html"><img class="item" src="Image/GameDev/2.png">  </a>
  			
- 			<img class="item" src="Image/GameDev/2.png"> 
  		</div>
  	</div>
  	<div class="footer" >
  		<a href="https://www.deviantart.com/davedwantarac/gallery"><img class="linkicon" style="vertical-align:middle" src="Image/Icon/DA.png" id="test1"> DaveDwantaraC</a>
  		<p style="display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
  		<a><img class="linkicon" style="vertical-align:middle" src="Image/Icon/email.png"> davedwantarac@gmail.com</a>
+ 		<p style="display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+ 		<a href="https://www.linkedin.com/in/dave-dwantara-chandra-0705a2154/"><img class="linkicon" style="vertical-align:middle" src="Image/Icon/LI-In-Bug.png"> LinkedIn</a>
  	</div>	
  	<div class="popupbg hide" id="myPopup">
  		<img class="popupimg" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
@@ -128,8 +130,8 @@
 </body>
 <script type="text/javascript">
 	function OpenImage(imgsource) {
+		document.getElementById("daiimg").src="";
   		var popup = document.getElementById("myPopup");
-  		document.getElementById("daiimg").src="";
   		popup.classList.toggle("show");
   		if(typeof imgsource === 'string'){
   			document.getElementById("daiimg").src=imgsource;

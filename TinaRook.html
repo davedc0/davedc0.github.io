@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="class/class.css">
+	
+  
+ 	<script src="Scroll.js"></script>
+
+
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	
+	
+	<title></title>
+</head>
+
+<body>
+	
+	<div class="title"><span style="float:left;margin: 5px;">
+        Hover for navigation
+    </span><p>Dave Dwantara Chandra  <br></p></div>
+		<div class="menu">
+			<a href="index.html"><div class="menuitem"> Home</div></a>
+			<a href="aboutme.html"><div class="menuitem"> About Me</div></a>
+			<a href="certificate.html"><div class="menuitem"> Certificate</div></a>
+		</div>
+
+ 	<div style="width: 100%; ">
+		
+		<img class="headimage" src="Image/GameDev/2.png">
+
+	</div>
+ 	<div class="whitebgtext flexdis">
+ 		<img style="max-height: 350px; " id="montage" src="Image/GameDev/tnr2.gif">
+ 		<div class="inlinecontent">
+ 			<div class="subtitle"><p>Tina and Rook</p></div>
+ 			<p style="padding-left:  10px;" class="walltext">	Tina and Rook is a solo game project that I am currently working on. The game is a puzzle adventure game that is inspired by the like of Scooby Doo, Deponia, Professor Layton and Ghost Trick: Phantom Detective. The game follow two main character named Tina and Rook as they explore a small vilage in the mountain.<br><br>
+ 			As a ghost run rampant in the village ,it's up to Tina and Rook to capture that ghost. <br><br>
+ 		</div>
+ 	</div>
+ 	<div class="purplebg" style="padding-left:  50px; height: inherit; padding-top: 20px; padding-bottom: 20px;" >
+ 		<div class="inlinecontent">
+ 			<p style="padding-left:  50px; " class="walltext">	
+ 			The player must go around and find objects that they can use to solve puzzles in the game. Like in the game Deponia the player also can combine 2 items to create a new item that they can use. By dragging items into the screen they can use the item to interact with the environment. By exploring the village the player must uncover the dark secret that's hidden in that village. The story of the game will take a lot of inspiration from Scooby-Doo, Detective Conan, Ace Attorney, and Professor Layton, where while the story is quite heavy sometimes, but didn't have too much drama that makes the story too adulterous. That way the story will be able to be enjoyed by kids alike.<br><br>
+
+ 			</p>
+ 		</div>
+ 	</div>
+ 	<div class="whitebg whitehide"  >
+ 		
+ 		
+ 		<div class="subtitle" ><p>Art Work</p></div>
+ 		<div class="flexdis imagescontainer">
+ 			
+ 			<img class="item" src="Image/GameDev/tnr2.gif" onclick="OpenImage(this)"> 
+ 			<img class="item" src="Image/GameDev/tnr3.gif" onclick="OpenImage(this)"> 
+ 			<img class="item" src="Image/GameDev/tnr1.png" onclick="OpenImage(this)"> 
+ 			<img class="item" src="Image/GameDev/tnr2.png" onclick="OpenImage(this)"> 
+ 			<img class="item" src="Image/PixelArt/1.png" onclick="OpenImage(this)"> 
+ 			<img class="item" src="Image/PixelArt/2.gif" onclick="OpenImage(this)">
+ 			<img class="item" src="Image/PixelArt/3.png" onclick="OpenImage(this)"> 
+ 			<img class="item" src="Image/PixelArt/4.gif" onclick="OpenImage(this)">
+ 			<img class="item" src="Image/PixelArt/6.png" onclick="OpenImage(this)"> 
+ 			<img class="item" src="Image/PixelArt/8.gif" onclick="OpenImage(this)">
+ 		</div>
+ 	</div>
+
+ 	<div class="footer" >
+ 		<a href="https://www.deviantart.com/davedwantarac/gallery"><img class="linkicon" style="vertical-align:middle" src="Image/Icon/DA.png" id="test1"> DaveDwantaraC</a>
+ 		<p style="display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+ 		<a><img class="linkicon" style="vertical-align:middle" src="Image/Icon/email.png"> davedwantarac@gmail.com</a>
+ 		<p style="display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+ 		<a href="https://www.linkedin.com/in/dave-dwantara-chandra-0705a2154/"><img class="linkicon" style="vertical-align:middle" src="Image/Icon/LI-In-Bug.png"> LinkedIn</a>
+ 	</div>		
+ 	<div class="popupbg hide" id="myPopup">
+ 		<img class="popupimg" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
+ 		<div class="top-left" onclick="CloseImage()">Click here to Close</div>
+ 	</div>
+</body>
+<script type="text/javascript">
+	function OpenImage(imgsource) {
+		document.getElementById("daiimg").src="";
+  		var popup = document.getElementById("myPopup");
+  		popup.classList.toggle("show");
+  		if(typeof imgsource === 'string'){
+  			document.getElementById("daiimg").src=imgsource;
+  		}
+  		else{
+  			document.getElementById("daiimg").src=imgsource.src;
+  		}
+  		
+	}
+	function CloseImage() {
+  		var popup = document.getElementById("myPopup");
+ 	 	popup.classList.toggle("show");
+	}
+	function CloseImage3D() {
+  		var popup = document.getElementById("myPopup3D");
+ 	 	popup.classList.toggle("show");
+	}
+	function OpenImage3D(imgsource,name,num,type) {
+  		var popup = document.getElementById("myPopup3D");
+  		popup.classList.toggle("show");
+  		document.getElementById("daiimg3d").src=imgsource.src;
+		$("#3dpane").empty();
+ 	 	$("#3dpane").append('<img class="popupimg3dsideview" id="daiimg" src="'+imgsource.src+'" onclick="SwitchImage(this)"> ');
+ 	 	for (var i = 1; i <= num; i++) {
+ 	 		$("#3dpane").append('<img class="popupimg3dsideview" id="daiimg" src="Image/3DModel/'+name+i+'.'+type+'" onclick="SwitchImage(this)"> ');
+ 	 	}
+	}
+	function SwitchImage(imgsource) {
+  		document.getElementById("daiimg3d").src=imgsource.src;
+	}
+</script>
+</html>
