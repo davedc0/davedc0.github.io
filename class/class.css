@@ -8,6 +8,17 @@ body{
 	font-family: Century Gothic;
 	overflow-x: hidden;
 }
+.tnrBG{
+	
+    background-color: #814aa8;
+   
+	background-image: url('bg.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-blend-mode: screen;
+	
+}
 html {
   scroll-behavior: smooth;
 }
