@@ -294,6 +294,13 @@ position: relative;
   right: 16px;
   color: #ffffff;
 }
+.closebutton {
+	position: absolute;
+	top: 8px;
+	right: 16px;
+	color: #ffffff;
+	font-size: 25px;
+  }
 .footer{
 	padding-top: 20px;
 	margin-top: 30px;
