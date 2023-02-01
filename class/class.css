@@ -3,7 +3,7 @@ body{
 	margin: 0;
 	min-height: 100vh;
 	max-width: 100hh;
-	background-image: linear-gradient(to bottom right, #814aa8, #40202c);
+	background-image: linear-gradient(to bottom right, #eed6ff, #ffffff);
 	/*background-color:#814aa8;*/
 	font-family: Century Gothic;
 	overflow-x: hidden;
