@@ -1,203 +1,543 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<META NAME="robots" CONTENT="noindex,nofollow">
-	<link rel="stylesheet" href="class/class.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="Scroll.js"></script>
-
-
-	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
-	
-	
-	<title>My Works</title>
-</head>
-
+    <head>
+        <link href="sass/main.min.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    </head>
 <body>
-	
-	<div class="title"><span style="float:left;margin: 20px;">
-        Hover for navigation
-    </span>
-    <p>Dave Dwantara Chandra<br></p></div>
-		<div class="menu">
-			<a href="index.html"><div class="menuitem"> Home</div></a>
-			<a href="aboutme.html"><div class="menuitem"> About Me</div></a>
-			<a href="certificate.html"><div class="menuitem"> Certificate</div></a>
-		</div>
-		
- 	
- 	<div class="whitebg flexdis">
- 		<img style="max-height: 100%; " id="montage" src="Image/montage.png">
- 		
- 		<div class="inlinecontent">
- 			<div class="subtitle"><p>MY PORTOFOLIO</p></div>
- 			<p style="padding-left:  10px; text-align: center;" class="walltext">Hello! My name is Dave Dwantara Chandra, I am capable of art from digital painting, pixel art, and 3D sculpting and modeling. I am also capable in the field of Information technology and have made few games of my own.
- 			</p>
- 			<br><br>
- 			<p style="padding-left:  10px; text-align: center; font-size: 25px;" class="walltext">SCROLL DOWN TO SEE MY WORKS.
- 			</p>
- 			<p style="padding-left:  10px; text-align: center;" class="walltext">Click the work to zoom.
- 			</p>
- 		</div>
- 	</div>
+    
+    <nav class="navbar navbar-expand navbar-dark bg-primary fixed-top navbar-expand-lg customnavbar" >
+        <div class="container-fluid w-100">
+            <!-- Wrapped with container-fluid -->
+            <div class="row w-100 text-center">
+              <a class="navbar-brand col-3 col-md-2 border-end border-secondary  text-secondary" href="#" style="font-size: min(3vw,4vh);">Dave DC</a>
+              <div class="collapse navbar-collapse col-7 col-md-8">
+                  <!-- Wrapped with collapse navbar-collapse, otherwise navs won't be visible -->
+                  <ul class="navbar-nav w-100 ">
+                      <li class="nav-item col-3 col-md-1">
+                          <a class="nav-link" href="Index.html">Home</a>
+                      </li>
+                      <li class="nav-item col-3 col-md-1">
+                          <a class="nav-link" href="Meh.html">About Me</a>
+                      </li>
+                      <li class="nav-item col-3 col-md-1">
+                          <a class="nav-link" href="Certificate.html">Certificate</a>
+                      </li>
+                  </ul>
+                  <!-- Wrapped with collapse navbar-collapse, otherwise navs won't be visible -->
+              </div>
 
- 	<div class="whitebg whitehide" >
- 		
- 		<div class="subtitle" ><p>UNITY GAME DEVELOPMENT</p></div>
- 		<div class="flexdis imagescontainer">
-			
-			<a  href="TinaRook.html"><img class="item" src="Image/GameDev/2.png">  </a>
-			<a  href="Modular3D.html"><img class="item" src="Image/3DModel/Modular/card.jpg">  </a>
- 			<a  href="Meteor.html"><img  class="item" src="Image/GameDev/1.jpg"> </a>
- 			
- 			<a  href="Cat.html"><img class="item" src="Image/GameDev/3.png">  </a>
- 		</div>
- 	</div>
- 	<div class="purplebg purplehide" >
- 		
- 		<div class="subtitle" ><p>DIGITAL PAINTING</p></div>
- 		<div class="flexdis imagescontainer">
-			<img class="item" src="Image/DigitalPaint/17.jpg" onclick="OpenImage('Image/DigitalPaint/17.jpg')">
-			<img class="item" src="Image/DigitalPaint/18.jpg" onclick="OpenImage('Image/DigitalPaint/18.jpg')">
-			<img class="item" src="Image/DigitalPaint/13.jpg" onclick="OpenImage('Image/DigitalPaint/big13.jpg')">
-			<img class="item" src="Image/DigitalPaint/19.jpg" onclick="OpenImage('Image/DigitalPaint/19.jpg')">
-			<img class="item" src="Image/DigitalPaint/20.jpg" onclick="OpenImage('Image/DigitalPaint/20.jpg')">
-			<img class="item" src="Image/DigitalPaint/22.jpg" onclick="OpenImage('Image/DigitalPaint/22.jpg')">
-			<img class="item" src="Image/DigitalPaint/21.jpg" onclick="OpenImage('Image/DigitalPaint/21.jpg')">
-			<img class="item" src="Image/DigitalPaint/16.jpg" onclick="OpenImage('Image/DigitalPaint/big16.jpg')">
-			<img class="item" src="Image/DigitalPaint/15.jpg" onclick="OpenImage('Image/DigitalPaint/big15.jpg')">
-			<img class="item" src="Image/DigitalPaint/14.jpg" onclick="OpenImage('Image/DigitalPaint/big14.jpg')">
-			
- 			<img class="item" src="Image/DigitalPaint/1.jpg" 
- 			onclick="OpenImage('Image/DigitalPaint/big1.jpg')"> 
- 			<img class="item" src="Image/DigitalPaint/2.jpg" onclick="OpenImage('Image/DigitalPaint/big2.jpg')">
- 			<img class="item" src="Image/DigitalPaint/3.jpg" onclick="OpenImage('Image/DigitalPaint/big3.jpg')">
- 			<img class="item" src="Image/DigitalPaint/4.jpg" onclick="OpenImage('Image/DigitalPaint/big4.jpg')">
- 			<img class="item" src="Image/DigitalPaint/5.png" onclick="OpenImage('Image/DigitalPaint/big5.png')">
- 			<img class="item" src="Image/DigitalPaint/6.jpg" onclick="OpenImage('Image/DigitalPaint/big6.jpg')">
- 			<img class="item" src="Image/DigitalPaint/7.jpg" onclick="OpenImage('Image/DigitalPaint/big7.jpg')">
- 			<img class="item" src="Image/DigitalPaint/8.jpg" onclick="OpenImage('Image/DigitalPaint/big8.jpg')">
- 			<img class="item" src="Image/DigitalPaint/9.jpg" onclick="OpenImage('Image/DigitalPaint/big9.jpg')">
- 			<img class="item" src="Image/DigitalPaint/10.jpg" onclick="OpenImage('Image/DigitalPaint/big10.jpg')">
- 			<img class="item" src="Image/DigitalPaint/11.jpg" onclick="OpenImage('Image/DigitalPaint/big11.jpg')">
- 			<img class="item" src="Image/DigitalPaint/12.jpg" onclick="OpenImage('Image/DigitalPaint/big12.jpg')">
- 		</div>
- 	</div>
- 	<div class="whitebg whitehide" >
- 		
- 		<div class="subtitle" ><p>PIXEL ART</p></div>
- 		<div class="flexdis imagescontainer">
-			<img class="item" src="Image/PixelArt/14.png" onclick="OpenImage(this)"> 
- 			<img class="item" src="Image/PixelArt/9.png" onclick="OpenImage(this)"> 
- 			<img class="item" src="Image/PixelArt/1.png" onclick="OpenImage(this)"> 
- 			<img class="item" src="Image/PixelArt/2.gif" onclick="OpenImage(this)">
- 			<img class="item" src="Image/PixelArt/13.png" onclick="OpenImage(this)"> 
- 			<img class="item" src="Image/PixelArt/3.png" onclick="OpenImage(this)"> 
- 			<img class="item" src="Image/PixelArt/4.gif" onclick="OpenImage(this)">
- 			<img class="item" src="Image/PixelArt/5.gif" onclick="OpenImage(this)">
- 			<img class="item" src="Image/PixelArt/6.png" onclick="OpenImage(this)"> 
- 			<img class="item" src="Image/PixelArt/7.png" onclick="OpenImage(this)"> 
- 			<img class="item" src="Image/PixelArt/8.gif" onclick="OpenImage(this)">
- 			<img class="item" src="Image/PixelArt/10.png" onclick="OpenImage(this)"> 
- 			<img class="item" src="Image/PixelArt/11.png" onclick="OpenImage(this)"> 
- 			<img class="item" src="Image/PixelArt/12.png" onclick="OpenImage(this)"> 
- 		</div>
- 	</div>
- 	<div class="purplebg purplehide" >
- 		
- 		<div class="subtitle" ><p>3D MODEL</p></div>
- 		<div class="flexdis imagescontainer">
-			<img class="item" src="Image/3DModel/18.png" onclick="OpenImage3D(this,'BUILDING',3,'png')">
-			<img class="item" src="Image/3DModel/16.png" onclick="OpenImage3D(this,'Fluffcat',2,'png')">
-			<img class="item" src="Image/3DModel/17.png" onclick="OpenImage3D(this,'Gun',1,'png')">
-			<img class="item" src="Image/3DModel/14.png" onclick="OpenImage3D(this,'emi',2,'png')">
-			<img class="item" src="Image/3DModel/15.png" onclick="OpenImage3D(this,'ven',2,'png')">
-			<img class="item" src="Image/3DModel/13.jpg" onclick="OpenImage3D(this,'pika',1,'jpg')">
-			<img class="item" src="Image/3DModel/11.png" onclick="OpenImage3D(this,'bc',1,'png')">
-			<img class="item" src="Image/3DModel/12.png" onclick="OpenImage3D(this,'thunder',2,'png')">
- 			<img class="item" src="Image/3DModel/10.png" onclick="OpenImage3D(this,'g',2,'png')">
- 			<img class="item" src="Image/3DModel/6.png" onclick="OpenImage3D(this,'WELL',2,'png')">
-			<img class="item" src="Image/3DModel/8.png" onclick="OpenImage3D(this,'witch',2,'png')">
- 			<img class="item" src="Image/3DModel/9.PNG" onclick="OpenImage3D(this,'i',1,'PNG')">
- 			
- 			<img class="item" src="Image/3DModel/2.jpg" onclick="OpenImage3D(this,'kat',4,'jpg')">
- 			<img class="item" src="Image/3DModel/1.gif" onclick="OpenImage3D(this,'bat',3,'jpg')"> 
- 			<img class="item" src="Image/3DModel/3.png" onclick="OpenImage3D(this,'ship',5,'png')">
- 			<img class="item" src="Image/3DModel/4.jpg" onclick="OpenImage3D(this,'girl',1,'png')">
- 			<img class="item" src="Image/3DModel/5.png" onclick="OpenImage3D(this,'x',4,'jpg')">
- 		</div>
- 	</div>
- 	<div class="whitebg whitehide" >
- 		
-		<div class="subtitle" ><p>Animation</p></div>
-		<div class="flexdis imagescontainer">
-			
-			<iframe class="item" src="https://www.youtube.com/embed/CaAESn2bzn4"></iframe>
-		</div>
-	</div>
- 	<div class="footer" >
- 		<a href="https://www.deviantart.com/davedwantarac/gallery"><img class="linkicon" style="vertical-align:middle" src="Image/Icon/DA.png" id="test1">  DaveDwantaraC</a>
- 		<p style="display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
- 		<a><img class="linkicon" style="vertical-align:middle" src="Image/Icon/email.png"> davedwantarac@gmail.com</a>
- 		<p style="display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
- 		<a href="https://www.linkedin.com/in/dave-dwantara-chandra"><img class="linkicon" style="vertical-align:middle" src="Image/Icon/LI-In-Bug.png"> LinkedIn</a>
- 	</div>	
- 	<div class="popupbg hide" id="myPopup">
- 		<img class="popupimg" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
- 		<div class="closebutton" onclick="CloseImage()">Click here to Close</div>
- 	</div>
- 	<div class="popupbg3d hide" id="myPopup3D">
- 		<img class="popupimg3d" id="daiimg3d" src="Image/3DModel/2.jpg"> 
- 		<div class="popupsideview" id="3dpane">
- 			<img class="popupimg3dsideview" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
- 			<img class="popupimg3dsideview" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
- 			<img class="popupimg3dsideview" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
- 			<img class="popupimg3dsideview" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
- 			<img class="popupimg3dsideview" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
- 			<img class="popupimg3dsideview" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
- 			<img class="popupimg3dsideview" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
- 			<img class="popupimg3dsideview" id="daiimg" src="Image/DigitalPaint/1.jpg"> 
- 		</div>
- 		<div class="closebutton" onclick="CloseImage3D()">Click here to Close</div>
- 	</div>
- 	<script>
-    AOS.init();
-  </script>
+            </div>
+            
+            
+            <!-- Wrapped with container-fluid -->
+        </div>
+    </nav>
+
+   
+    <div class="container-fluid-content bg-dark text-center overflow-hidden pagesection d-flex align-items-center">
+
+        <div class="row text-secondary align-items-center hidden-right justify-content-center">
+            <div class="col-6 h-50">
+                <h2 style="font-size: min(4vw,4vh);"> Hello my name is Dave Dwantara Chandra</h2>
+                <p class="pad  text-light" style="font-size: min(2vw,2vh);">Hello! My name is Dave Dwantara Chandra, I am capable of art from digital painting, pixel art, and 3D sculpting and modeling. I am also capable in the field of Information technology and have made few games of my own.</p>
+            </div>
+            <div class="col-3 h-100">
+                <img src="./asset/montage.png" class="img-fluid rowHeight" alt="Responsive image">
+            </div>
+        </div>
+       
+       
+      </div>
+
+     
+        
+      <div class="container-fluid-content bg-dark text-center overflow-hidden d-flex align-items-center py-2">
+        <div class="row text-secondary align-items-center hidden-right justify-content-center w-100">
+            <div class="col-10 col-md-6 h-50">
+                <h2 style="font-size: min(3vw,4vh);"> Below are my works, <u>click to enlarge</u></h2>
+                <i class="bi bi-arrow-down-circle text-light"  style="font-size: min(3vw,4vh);"></i>
+            </div>
+        </div>
+       
+       
+      </div>
+      
+      <div class="container-fluid-content bg-dark text-center pagesection overflow-hidden digitalpaintbg">
+        <div class="blurbottom imagegrid">
+          
+          <div  class="d-flex justify-content-center flex-shrink-0">
+            <div class="row w-100 d-flex justify-content-center">
+             
+
+              <div class="col-7 col-md-5 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap">
+                <div class="col-3 col-md-3 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap">
+                  <img
+                    src="asset/DigitalPaint/17.jpg"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Boat on Calm Water"
+                  />
+              
+                  <img
+                    src="asset/DigitalPaint/3.jpg"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Wintry Mountain Landscape"
+                  />
+                  <img
+                    src="asset/DigitalPaint/13.jpg"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Wintry Mountain Landscape"
+                  />
+                </div>
+                
+              
+                <div class="col-3 col-md-3 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap">
+                  <img
+                    src="asset/DigitalPaint/10.jpg"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Mountains in the Clouds"
+                  />
+              
+                  <img
+                    src="asset/DigitalPaint/25.jpg"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Boat on Calm Water"
+                  /> 
+                  <img
+                  src="asset/DigitalPaint/19.jpg"
+                  class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                  alt="Boat on Calm Water"
+                />
+                </div>
+              
+                <div class="col-3 col-md-3 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap">
+                  <img
+                    src="asset/DigitalPaint/22.jpg"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Waves at Sea"
+                  />
+                  <img
+                  src="asset/DigitalPaint/23.jpg"
+                  class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                  alt="Waves at Sea"
+                />
+                  <img
+                    src="asset/DigitalPaint/1.jpg"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Yosemite National Park"
+                  />
+                </div>
+                <div class="col-3 col-md-3 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap">
+                  <img
+                    src="asset/DigitalPaint/26.jpg"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Boat on Calm Water"
+                  />
+              
+                  <img
+                    src="asset/DigitalPaint/12.jpg"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Wintry Mountain Landscape"
+                  />
+                  <img
+                    src="asset/DigitalPaint/24.jpg"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Wintry Mountain Landscape"
+                  />
+                </div>
+              </div>
+               
+              <div class="col-4 col-md-3 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap position-relative hidden-right">
+                
+                <img
+                src="asset/DigitalPaint/25.jpg"
+                class="position-absolute bottom-0 start-0 shadow-1-strong rounded mb-1 titleimage"
+                alt="Mountains in the Clouds"
+              />
+              <figure class="text-secondary title z-3 position-absolute bottom-0 start-0 ">
+                <h1  class="display-6 text-secondary text-end mb-3">Digital Art</h1 >
+                <figcaption  class="text-light text-end">I am specialized in japanese anime and cartoon style, have been working freelance since highschool (8+ years) both as commission artist making singular pieces and for company making game arts.
+                </figcaption >
+                              
+              </figure>
+            </div>
+              </div>
+          </div>
+          
+      
+          
+      </div>
+      <div class="topsection bg-primary">  </div>
+      <div class="bottomsection bg-primary">  </div>
+    
+      <img src="asset/WebDesigns/box.png" class="position-absolute" style="top:10%; left: -5%; height: 30vw; scale: 75%; transform: rotate(20deg);"> 
+      <img src="asset/WebDesigns/triangle.png" class="position-absolute" style="bottom:10%; left: 5%; height: 30vw; scale: 200%; transform: rotate(20deg);">
+      <img src="asset/WebDesigns/box.png" class="position-absolute" style="bottom:0%; right: -5%; height: 30vw; scale: 25%; transform: rotate(-10deg);">
+      
+      </div>
+      
+      <div class="container-fluid-content bg-dark text-center pagesection overflow-hidden">
+        <div class="blurbottom imagegrid">
+          
+          <div  class="d-flex justify-content-center flex-shrink-0">
+            <div class="row w-100 d-flex justify-content-center">
+              <div class="col-4 col-md-3 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap position-relative hidden-left">
+                
+                  <img
+                  src="asset/3DModel/3.png"
+                  class="position-absolute bottom-0 start-0 shadow-1-strong rounded mb-1 titleimage"
+                  alt="Mountains in the Clouds"
+                />
+                <figure class="text-secondary title z-3 position-absolute bottom-0 start-0 ">
+                  <h1  class="display-6 text-secondary text-start mb-3">3D Models</h1 >
+                  <figcaption  class=" text-light text-start"> Made using blender I have experience in making fully rigged stylized character and background with custom texture and optimized for game development use.
+                  </figcaption >
+                                
+                </figure>
+              </div>
+
+              <div class="col-7 col-md-5 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap ">
+                <div class="col-3 col-md-3 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap">
+                  <img
+                    src="asset/3DModel/14.png"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Boat on Calm Water"
+                  />
+              
+                  <img
+                    src="asset/3DModel/emi1.png"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Wintry Mountain Landscape"
+                  />
+                  <img
+                    src="asset/3DModel/6.png"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Wintry Mountain Landscape"
+                  />
+                  <img
+                  src="asset/3DModel/8.png"
+                  class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                  alt="Wintry Mountain Landscape"
+                />
+                </div>
+                
+              
+                <div class="col-3 col-md-3 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap">
+                  <img
+                    src="asset/3DModel/3.png"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Mountains in the Clouds"
+                  />
+              
+                  <img
+                    src="asset/3DModel/16.png"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Boat on Calm Water"
+                  /> 
+                  <img
+                  src="asset/3DModel/Fluffcat1.png"
+                  class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                  alt="Boat on Calm Water"
+                /><img
+                src="asset/3DModel/10.png"
+                class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                alt="Boat on Calm Water"
+              />
+                </div>
+              
+                <div class="col-3 col-md-3 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap">
+                  <img
+                    src="asset/3DModel/g2.png"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Waves at Sea"
+                  />
+                  <img
+                  src="asset/3DModel/15.png"
+                  class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                  alt="Waves at Sea"
+                />
+                  <img
+                    src="asset/3DModel/17.png"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Yosemite National Park"
+                  /><img
+                  src="asset/3DModel/18.png"
+                  class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                  alt="Yosemite National Park"
+                /><img
+                src="asset/3DModel/4.jpg"
+                class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                alt="Yosemite National Park"
+              />
+                </div>
+                <div class="col-3 col-md-3 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap">
+                  <img
+                    src="asset/3DModel/2.jpg"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Boat on Calm Water"
+                  />
+              
+                  <img
+                    src="asset/3DModel/5.png"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Wintry Mountain Landscape"
+                  />
+                  <img
+                    src="asset/3DModel/11.png"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Wintry Mountain Landscape"
+                  /> <img
+                  src="asset/3DModel/12.png"
+                  class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                  alt="Wintry Mountain Landscape"
+                />
+                <img
+                src="asset/3DModel/13.jpg"
+                class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                alt="Wintry Mountain Landscape"
+              />
+                </div>
+              </div>
+               
+               
+              </div>
+          </div>
+          
+      
+          
+      </div>
+      <div class="topsection bg-primary">  </div>
+      <div class="bottomsection bg-primary">  </div>
+      <img src="asset/WebDesigns/triangle.png" class="position-absolute" style="top:0%; left: -5%; height: 30vw; scale: 25%; transform: rotate(-10deg);">
+      <img src="asset/WebDesigns/box.png" class="position-absolute" style="bottom:10%; left: -5%; height: 30vw; scale: 75%; transform: rotate(20deg);"> 
+      <img src="asset/WebDesigns/triangle.png" class="position-absolute" style="top:10%; right: 5%; height: 30vw; scale: 100%; transform: rotate(20deg);">
+      <img src="asset/WebDesigns/box.png" class="position-absolute" style="bottom:0%; right: -5%; height: 30vw; scale: 25%; transform: rotate(-10deg);">
+      </div>
+
+      <div class="container-fluid-content bg-dark text-center pagesection overflow-hidden digitalpaintbg">
+        <div class="blurbottom imagegrid">
+          
+          <div  class="d-flex justify-content-center flex-shrink-0">
+            <div class="row w-100 d-flex justify-content-center">
+             
+
+              <div class="col-7 col-md-5 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap">
+                <div class="col-3 col-md-3 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap">
+                  <img
+                    src="asset/PixelArt/16.png"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Boat on Calm Water"
+                  />
+              
+                  <img
+                    src="asset/PixelArt/2.gif"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Wintry Mountain Landscape"
+                  />
+                  <img
+                    src="asset/PixelArt/17.jpg"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Wintry Mountain Landscape"
+                  />
+                  <img
+                  src="asset/PixelArt/19.png"
+                  class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                  alt="Wintry Mountain Landscape"
+                />
+                </div>
+                
+              
+                <div class="col-3 col-md-3 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap">
+                  <img
+                    src="asset/PixelArt/4.gif"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Mountains in the Clouds"
+                  />
+                  <img
+                  src="asset/PixelArt/6.png"
+                  class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                  alt="Boat on Calm Water"
+                />
+                  <img
+                    src="asset/PixelArt/5.gif"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Boat on Calm Water"
+                  /> 
+                  
+                <img
+                src="asset/PixelArt/20.jpg"
+                class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                alt="Wintry Mountain Landscape"
+              />
+                </div>
+              
+                <div class="col-3 col-md-3 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap">
+                  <img
+                    src="asset/PixelArt/7.png"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Waves at Sea"
+                  />
+                  <img
+                  src="asset/PixelArt/13.png"
+                  class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                  alt="Waves at Sea"
+                />
+                  <img
+                    src="asset/PixelArt/9.png"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Yosemite National Park"
+                  />
+                </div>
+                <div class="col-3 col-md-3 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap">
+                  <img
+                    src="asset/PixelArt/10.png"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Boat on Calm Water"
+                  />
+              
+                  <img
+                    src="asset/PixelArt/11.png"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Wintry Mountain Landscape"
+                  />
+                  <img
+                    src="asset/PixelArt/12.png"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Wintry Mountain Landscape"
+                  />
+                </div>
+              </div>
+               
+              <div class="col-4 col-md-3 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap position-relative hidden-right">
+                
+                <img
+                src="asset/PixelArt/14.png"
+                class="position-absolute bottom-0 start-0 shadow-1-strong rounded mb-1 titleimage w-100 object-fit-contain"
+                alt="Mountains in the Clouds"
+              />
+              <figure class="text-secondary title z-3 position-absolute bottom-0 start-0 ">
+                <h1  class="display-6 text-secondary text-end mb-3">Pixel Art</h1 >
+                <figcaption  class="text-light text-end">I have experienced in creating pixel arts and animation as a standalone art and for games.
+                </figcaption >
+                              
+              </figure>
+            </div>
+              </div>
+          </div>
+          
+      
+          
+      </div>
+      <div class="topsection bg-primary">  </div>
+      <div class="bottomsection bg-primary">  </div>
+      <img src="asset/WebDesigns/box.png" class="position-absolute" style="top:10%; left: -5%; height: 30vw; scale: 75%; transform: rotate(20deg);"> 
+      <img src="asset/WebDesigns/triangle.png" class="position-absolute" style="bottom:10%; left: 5%; height: 30vw; scale: 200%; transform: rotate(20deg);">
+      <img src="asset/WebDesigns/box.png" class="position-absolute" style="bottom:0%; right: -5%; height: 30vw; scale: 25%; transform: rotate(-10deg);">
+      
+      </div>
+
+      <div class="container-fluid-content bg-dark text-center pagesection overflow-hidden">
+        <div class="blurbottom imagegrid">
+          
+          <div  class="d-flex justify-content-center flex-shrink-0">
+            <div class="row w-100 d-flex justify-content-center">
+              <div class="col-4 col-md-3 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap position-relative hidden-left">
+                
+                  <img
+                  src="asset/3DModel/3.png"
+                  class="position-absolute bottom-0 start-0 shadow-1-strong rounded mb-1 titleimage"
+                  alt="Mountains in the Clouds"
+                />
+                <figure class="text-secondary title z-3 position-absolute bottom-0 start-0 ">
+                  <h1  class="display-6 text-secondary text-start mb-3">Game Development</h1 >
+                  <figcaption  class="text-light text-start">Experienced in using Unity and Godot to create games and have publish a free game on steam with more than 7000 downloads .
+                  </figcaption >
+                                
+                </figure>
+              </div>
+
+              <div class="col-7 col-md-5 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap d-flex justify-content-center ">
+                <div class="col-8 col-md-6 px-1 mb-1 mb-lg-0 d-flex align-content-between flex-wrap ">
+                  <a href="TnR.html"><img
+                    src="asset/GameDev/2.png"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Boat on Calm Water"
+                  /></a>
+                  
+                  <a href="Modular3D.html"><img
+                    src="asset/3DModel/Modular/card.jpg"
+                    class="w-100 shadow-1-strong rounded mb-1 hidden-down imageenlarge" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    alt="Boat on Calm Water"
+                  /></a>
+                  
+                </div>
+               
+               
+              </div>
+               
+               
+              </div>
+          </div>
+          
+      
+          
+      </div>
+      <div class="topsection bg-primary">  </div>
+      <div class="bottomsection bg-primary">  </div>
+      <img src="asset/WebDesigns/triangle.png" class="position-absolute" style="top:0%; left: -5%; height: 30vw; scale: 25%; transform: rotate(-10deg);">
+      <img src="asset/WebDesigns/box.png" class="position-absolute" style="bottom:10%; left: -5%; height: 30vw; scale: 75%; transform: rotate(20deg);"> 
+      <img src="asset/WebDesigns/triangle.png" class="position-absolute" style="top:10%; right: 5%; height: 30vw; scale: 100%; transform: rotate(20deg);">
+      <img src="asset/WebDesigns/box.png" class="position-absolute" style="bottom:0%; right: -5%; height: 30vw; scale: 25%; transform: rotate(-10deg);">
+      </div>
+
+
+      <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom border-secondary bg-primary w-100">
+              <div class="row w-100 d-flex justify-content-center">
+                  <div class="col-3 d-flex justify-content-center text-secondary">
+                    <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1 rounded-circle sclinkbutton" target="_blank" href="https://twitter.com/Davdc5" role="button"><i class="bi bi-twitter-x"></i></a>
+                  </div>
+                  <div class="col-3 d-flex justify-content-center text-secondary">
+                    <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1 rounded-circle sclinkbutton" target="_blank" href="https://www.deviantart.com/davedisconnected" role="button"><i class="fa-brands fa-deviantart"></i></a>
+                  </div>
+                  <div class="col-3 d-flex justify-content-center text-secondary">
+                    <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1 rounded-circle sclinkbutton" target="_blank" href=" https://www.linkedin.com/in/dave-dwantara-chandra/" role="button"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                 
+              </div>
+          </section>
+         
+          <section class="d-flex justify-content-center justify-content-lg-between p-4 bg-primary w-100">
+            <div class="row w-100 d-flex justify-content-center">
+                <div class="col-10 d-flex justify-content-center text-secondary">
+                      Thanks for viewing ^^
+                </div>
+                
+               
+            </div>
+        </section>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/4e77f8a76a.js" crossorigin="anonymous"></script>
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog position-absolute top-50 start-50 translate-middle">
+        <div class="modal-content">
+          <div class="modal-header text-secondary bg-dark">
+            <h5 class="modal-title" id="staticBackdropLabel">Image Zoom</h5>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+          <div class="modal-body bg-secondary justify-content-center d-flex">
+            <img src="" class="modal-img  border border-dark border-3" alt="">
+          </div>
+         
+        </div>
+      </div>
+    </div>
+    </body>
 </body>
-<script type="text/javascript">
-	function OpenImage(imgsource) {
-		document.getElementById("daiimg").src="";
-  		var popup = document.getElementById("myPopup");
-  		popup.classList.toggle("show");
-  		if(typeof imgsource === 'string'){
-  			document.getElementById("daiimg").src=imgsource;
-  		}
-  		else{
-  			document.getElementById("daiimg").src=imgsource.src;
-  		}
-  		
-	}
-	function CloseImage() {
-  		var popup = document.getElementById("myPopup");
- 	 	popup.classList.toggle("show");
-	}
-	function CloseImage3D() {
-  		var popup = document.getElementById("myPopup3D");
- 	 	popup.classList.toggle("show");
-	}
-	function OpenImage3D(imgsource,name,num,type) {
-  		var popup = document.getElementById("myPopup3D");
-  		popup.classList.toggle("show");
-  		document.getElementById("daiimg3d").src=imgsource.src;
-		$("#3dpane").empty();
- 	 	$("#3dpane").append('<img class="popupimg3dsideview" id="daiimg" src="'+imgsource.src+'" onclick="SwitchImage(this)"> ');
- 	 	for (var i = 1; i <= num; i++) {
- 	 		$("#3dpane").append('<img class="popupimg3dsideview" id="daiimg" src="Image/3DModel/'+name+i+'.'+type+'" onclick="SwitchImage(this)"> ');
- 	 	}
-	}
-	function SwitchImage(imgsource) {
-  		document.getElementById("daiimg3d").src=imgsource.src;
-	}
-</script>
 </html>
