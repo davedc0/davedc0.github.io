@@ -1,0 +1,24 @@
+
+
+$primary: #776ac1ff;
+$secondary: #ffaa44ff;
+$dark: #191919ff;
+$light:#f2f7f2ff;
+$success: #74DA9F;
+$danger: #DA4855;
+
+ 
+
+@import '../node_modules/bootstrap/scss/functions';
+
+@import '../node_modules/bootstrap/scss/variables';
+
+
+$custom-colors: (
+    "secondarydark":#33202aff
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+@import '../node_modules/bootstrap/scss/bootstrap';
+

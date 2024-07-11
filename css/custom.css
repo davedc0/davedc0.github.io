@@ -1,6 +1,51 @@
-body{
-    background-color: #C23D7F;
-    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+@font-face {
+    font-family: cuphead;
+    src: url('font/ChailceNogginRegular.ttf') format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: rony;
+    src: url('font/Ronysiswadi9Med.ttf') format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: crafty;
+    src: url('font/SuperCrafty-vngrE.ttf') format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: cat;
+    src: url('font/Catways-OGZ56.otf') format("opentype");
+    font-weight: normal;
+}
+
+.catfont{
+    font-family: "cat", Helvetica, sans-serif;
+}
+
+.craftyfont{
+    font-family: "crafty", Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+h2{
+    font-family: "cuphead", Helvetica, sans-serif;
+}
+body {
+  background-color: #C23D7F;
+  font-family: "rony", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+ 
+}
+
+#tnr{
+    cursor: url("curs.png"), none;
+}
+#tnr *{
+    cursor: url("curs.png"), none;
 }
 .imagegrid{
     transition: all 2s;
@@ -54,10 +99,17 @@ body{
     transform: translateX(0%);
 }
 
+.box{
+    position: relative;
+    padding: 50px;
+    border-radius: 50px;
+    
+    
+}
 .pagesection{
     position: relative;
     width:  auto;
-    opacity: 0.7;
+    
     
     transition: all 0.5s;
     
@@ -110,15 +162,27 @@ body{
     mask-image: linear-gradient(black, black);
     max-height: 1500px;
 }
+.hoverenlarge{
+    transform: scale(1);
+    transition: all 0.3s ease-out;
+}
+.hoverenlarge:hover{
+    transform: scale(1.2);
+}
 .title{
-    font-size: min(3vw,3vh);
+    font-size: min(2.5vw,2vh);
+}
+.title h1{
+    font-family: "cuphead", Helvetica, sans-serif;
+    font-size: min(6vw,5vh);
 }
 .imageenlarge {
     
     transition: all 0.4s;
+  
     z-index: 2;
     width: auto;
-    opacity: 0.75;
+    opacity: 1;
 }
 .imageenlarge:hover{
     transform: scale(1.5);
@@ -153,7 +217,17 @@ body{
   /* Chromium + Safari */
     image-rendering: pixelated;
 }
-
+.tinarook{
+    opacity: 0.5;
+    transform: translateY(-10%) scale(1.0);
+    transition: all 0.2s ease ;
+    filter: brightness(0%);
+}
+.tinarook:hover{
+    opacity: 1;
+    filter: brightness(100%);
+    transform: translateY(-10%) scale(1.1);
+}
 .sclinkbutton{
     display: flex;
     align-items: center;
@@ -196,18 +270,20 @@ hr{
     height: max(50vh,50vw);
 }
 .carouselcustom{
-    height: 100%;
-    width: 100%;
     z-index: 3;
     position: relative;
-    height: auto;
-    min-height: 30vw;
     padding: 0;
 }
+.carouselcontrol{width:auto;height:auto; opacity: 0;
+    max-height: 40vh;
+    
+    max-width: 50vw;
+    width: auto;
+}
 .carouselimage{
-    max-height: 100%;
-    max-width: 100%;
-    width:40vw;
+    width:auto;
+    max-height: 40vh;
+    max-width: 50vw;
     height:auto;
     border-radius: 25px;
     margin: auto;
@@ -215,43 +291,43 @@ hr{
     position: absolute;
     border: solid;
     border-width: 2px;
-    top: 10%;
+    top: 50%;
     border-color: #F3CC94;
     transition: all 0.4s;
     
 }
 .carouselimage-1{
-    transform: translateX(-70%) scale(50%) ;
+    transform: translate(-70%,-50%) scale(50%) ;
     z-index: 1;
     border-width: 0px;
     opacity: 0.2;
 }
 .carouselimage-2{
-    transform: translateX(-40%) scale(80%) ;
+    transform: translate(-40%,-50%) scale(80%) ;
     z-index: 2;
     border-width: 0px;
 }
 .carouselimage-3{
-    transform: translateX(0%) scale(100%) ;
+    transform: translate(0%,-50%) scale(100%) ;
     z-index: 3;
     border-width: 2px;
     opacity: 1;
 }
 .carouselimage-4{
-    transform:  translateX(40%) scale(80%);
+    transform:  translate(40%,-50%) scale(80%);
     z-index: 2;
     border-width: 0px;
     
 }
 .carouselimage-5{
-    transform:  translateX(70%) scale(50%);
+    transform:  translate(70%,-50%) scale(50%);
     z-index: 1;
     border-width: 0px;
     
     opacity: 0.2;
 }
 .carouselimage-hidden{
-    transform: translateX(0%) scale(10%) ;
+    transform: translate(0%,-50%) scale(10%) ;
     z-index: 1;
 }
 .btngo2:hover {
@@ -263,6 +339,7 @@ hr{
     
     top: 50%;
     transform: translateY(-50%);
+    
 }
 .carousel-prev{
     left: 10%;

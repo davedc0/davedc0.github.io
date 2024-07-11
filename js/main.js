@@ -1,76 +1,28 @@
 
-
-const observer= new IntersectionObserver((entries)=>{
-    entries.forEach((entry)=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add('show');
-            observer.unobserve(entry.target)
-        }
-        else {
-            if(entry.boundingClientRect.bottom<0){
-                entry.target.classList.remove('show');
-            }
-            
-        }
-        console.log("asd")
-        
-    });
-},{threshold:0.2});
-
-const hiddenitemsdown= document.querySelectorAll(".hidden-down");
-hiddenitemsdown.forEach((el)=>observer.observe(el));
-
-const hiddenitemsright= document.querySelectorAll(".hidden-right");
-hiddenitemsright.forEach((el)=>observer.observe(el));
-const hiddenitemsleft= document.querySelectorAll(".hidden-left");
-hiddenitemsleft.forEach((el)=>observer.observe(el));
-
-
-function myFunction(pageId) {
-    
-    page=document.getElementById(pageId);
-    if(page.classList.contains("expand")){
-        page.classList.remove('expand');
-    }
-    else{
-        
-        page.classList.add('expand');
-    }
-}
-
-const observer2= new IntersectionObserver((entries )=>{
-    entries.forEach((entry)=>{
-       
-        if(entry.isIntersecting){
-            entry.target.classList.add('pagesectionHighlight');
-            if( entry.target.querySelector(".topsection")!==null){
-                entry.target.querySelector(".topsection").classList.add('show');
-                entry.target.querySelector(".bottomsection").classList.add('show');
-            }
-            
-        }
-        else {
-
-            entry.target.classList.remove('pagesectionHighlight');
-            if( entry.target.querySelector(".topsection")!==null){
-                entry.target.querySelector(".topsection").classList.remove('show');
-                entry.target.querySelector(".bottomsection").classList.remove('show');
-            }
-           
-            
-            
-        }
-    });
-},{threshold:0,  rootMargin: '-40% 0% -40% 0%'});
-const pagesection= document.querySelectorAll(".pagesection");
-pagesection.forEach((el)=>observer2.observe(el));
-
 const images=document.querySelectorAll(".imageenlarge , .carouselimage");
 images.forEach((el)=>el.addEventListener("click", modalimagechange));
 
 function modalimagechange(){
-    console.log("clicked");
-    document.querySelector(".modal-img").src=this.src;
+    console.log(this.id);
+    if(this.classList.contains("videoimage"))
+    {
+        if(this.id!="tosrc"){
+            document.querySelector(".modal-video").src=this.id
+        }
+        else{
+            document.querySelector(".modal-video").src=this.src;
+        }
+    }
+    else{
+        if(this.id!="tosrc"){
+            document.querySelector(".modal-img").src=this.id
+        }
+        else{
+            document.querySelector(".modal-img").src=this.src;
+        }
+    }
+   
+    
 }
 
 class carousel{
