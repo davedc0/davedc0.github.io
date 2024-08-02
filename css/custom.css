@@ -28,6 +28,9 @@
 .craftyfont{
     font-family: "crafty", Helvetica, sans-serif;
 }
+.ronyfont{
+    font-family: "rony", Helvetica, sans-serif;
+}
 
 html {
     scroll-behavior: smooth;
