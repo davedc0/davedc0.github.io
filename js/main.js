@@ -98,6 +98,3 @@ if(carimg.length>0){
         carou.carouselslide(1);
     }
 }
-
-
-
